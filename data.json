@@ -1,0 +1,55 @@
+{
+  "ids": {
+    "AccessToken": 18,
+    "Message": 1,
+    "User": 1,
+    "Luser": 2,
+    "Hiper": 1,
+    "ACL": 1,
+    "RoleMapping": 2,
+    "Role": 2,
+    "Account": 1,
+    "MPIresults": 1,
+    "emailtemp": 10
+  },
+  "models": {
+    "AccessToken": {
+      "Oyz0Gi3NLCH4iQT0FTpmDTZWxg9ZuRGmVEEh7MEqdW7usisejKGIuTYh9ykQdMxG": "{\"id\":\"Oyz0Gi3NLCH4iQT0FTpmDTZWxg9ZuRGmVEEh7MEqdW7usisejKGIuTYh9ykQdMxG\",\"ttl\":1209600,\"created\":\"2018-01-15T11:00:26.041Z\",\"userId\":1}",
+      "THPIaRS9dqJrQ68odgmXOEjJ2RTIPBlY6ow6JzjD6642IYanj2LfS52vZPsfZRAr": "{\"id\":\"THPIaRS9dqJrQ68odgmXOEjJ2RTIPBlY6ow6JzjD6642IYanj2LfS52vZPsfZRAr\",\"ttl\":1209600,\"created\":\"2018-01-15T11:00:52.105Z\",\"userId\":1}",
+      "2cnOx3Yv9vGNK0Kw3ndWG9b3DfT5XqCgWzXVr5NE9XWpcpSgQbPFF65EYmXklPSG": "{\"id\":\"2cnOx3Yv9vGNK0Kw3ndWG9b3DfT5XqCgWzXVr5NE9XWpcpSgQbPFF65EYmXklPSG\",\"ttl\":1209600,\"created\":\"2018-01-16T03:01:54.029Z\",\"userId\":1}",
+      "xzHli2oHa6AZxmaPIfgzQmbnyP96TGZeauSlwJ5BiwzYmalq7dMi8iFVaaHhGRmR": "{\"id\":\"xzHli2oHa6AZxmaPIfgzQmbnyP96TGZeauSlwJ5BiwzYmalq7dMi8iFVaaHhGRmR\",\"ttl\":1209600,\"created\":\"2018-01-16T06:12:14.757Z\",\"userId\":1}",
+      "dmLurMtnFmlK6I8hkCYUOIlF4VE7u0lODjEGDJcHMMbRXrwx81O7pqjHvukNAdAs": "{\"id\":\"dmLurMtnFmlK6I8hkCYUOIlF4VE7u0lODjEGDJcHMMbRXrwx81O7pqjHvukNAdAs\",\"ttl\":1209600,\"created\":\"2018-01-18T02:30:11.480Z\",\"userId\":1}",
+      "Zan9bWYvOHIAASt5xEmERg8UCC2SB5Uu6eITUtH4890kGOcafjrAu4oBwfZjdcch": "{\"id\":\"Zan9bWYvOHIAASt5xEmERg8UCC2SB5Uu6eITUtH4890kGOcafjrAu4oBwfZjdcch\",\"ttl\":1209600,\"created\":\"2018-01-24T03:23:19.052Z\",\"userId\":1}",
+      "KTq772APy7tJz6HTR5UhvBiyrgs7KdR1bPStKSFZ14QkYMQ7ot2KXGhU5V0kB5GJ": "{\"id\":\"KTq772APy7tJz6HTR5UhvBiyrgs7KdR1bPStKSFZ14QkYMQ7ot2KXGhU5V0kB5GJ\",\"ttl\":1209600,\"created\":\"2018-01-24T04:15:45.541Z\",\"userId\":1}",
+      "xtPsjqWRPehP6RvIWqH2ZBRPIAcKoo4HpwZVLTFPZ9BBVbSY0LB6zzeBfvUbeRdC": "{\"id\":\"xtPsjqWRPehP6RvIWqH2ZBRPIAcKoo4HpwZVLTFPZ9BBVbSY0LB6zzeBfvUbeRdC\",\"ttl\":1209600,\"created\":\"2018-01-24T04:16:30.495Z\",\"userId\":1}",
+      "xfgpsFjz0KY4LiKFovpVygP9XPSNjDhG6xsZPQVVSSQjXGngOidZzhw56k9XOv5G": "{\"id\":\"xfgpsFjz0KY4LiKFovpVygP9XPSNjDhG6xsZPQVVSSQjXGngOidZzhw56k9XOv5G\",\"ttl\":1209600,\"created\":\"2018-01-24T04:16:37.333Z\",\"userId\":1}",
+      "JcLQ0I8iTZD51I044bX1wPUYQX6phrEWeCpsGHdti2INmq8uxEyx7zKprxKy353I": "{\"id\":\"JcLQ0I8iTZD51I044bX1wPUYQX6phrEWeCpsGHdti2INmq8uxEyx7zKprxKy353I\",\"ttl\":1209600,\"created\":\"2018-01-24T04:17:23.951Z\",\"userId\":1}",
+      "uKKJm92o87LKMkibd3nYjwEuxTcHI58YEiSJJlXyKejytw6uZTbi6BijeFZkLTun": "{\"id\":\"uKKJm92o87LKMkibd3nYjwEuxTcHI58YEiSJJlXyKejytw6uZTbi6BijeFZkLTun\",\"ttl\":1209600,\"created\":\"2018-01-24T04:18:11.957Z\",\"userId\":1}",
+      "YyID16D7ixVwMU9o5Z5KZbMYAn59fnfIXABy2UnRVHiuHL8Jh74GYnL9IXQiGzRc": "{\"id\":\"YyID16D7ixVwMU9o5Z5KZbMYAn59fnfIXABy2UnRVHiuHL8Jh74GYnL9IXQiGzRc\",\"ttl\":1209600,\"created\":\"2018-01-24T04:18:41.765Z\",\"userId\":1}",
+      "DOwZ78n2wl7McPTCt56obCRqpiPcE8LCwFBBZqtda5lApKIL2lEGcMS2J5DUFwiv": "{\"id\":\"DOwZ78n2wl7McPTCt56obCRqpiPcE8LCwFBBZqtda5lApKIL2lEGcMS2J5DUFwiv\",\"ttl\":1209600,\"created\":\"2018-01-24T04:19:13.202Z\",\"userId\":1}",
+      "og952QEo9iLI4vzwiU0z6UFpXsJEJBIMHExYANjJI7dbmBEOU1KxwKxstiEUYOIF": "{\"id\":\"og952QEo9iLI4vzwiU0z6UFpXsJEJBIMHExYANjJI7dbmBEOU1KxwKxstiEUYOIF\",\"ttl\":1209600,\"created\":\"2018-01-24T04:39:51.158Z\",\"userId\":1}",
+      "ZxcS82o0TjncRvC8kWXK2IkIZGA4xrx9D78N1DRkyejstesb8SfJNDCIpJfyrkuJ": "{\"id\":\"ZxcS82o0TjncRvC8kWXK2IkIZGA4xrx9D78N1DRkyejstesb8SfJNDCIpJfyrkuJ\",\"ttl\":1209600,\"created\":\"2018-01-24T04:40:19.225Z\",\"userId\":1}",
+      "5iSX6tqrryjMwOQeUnRB2IhbjJboJsDEjkiK28DBHitJexXVi5oaZFeCjpQ0U91u": "{\"id\":\"5iSX6tqrryjMwOQeUnRB2IhbjJboJsDEjkiK28DBHitJexXVi5oaZFeCjpQ0U91u\",\"ttl\":1209600,\"created\":\"2018-02-28T02:28:15.152Z\",\"userId\":1}",
+      "BorbKSuHhRTYa3n75B1GrAal6sOyy4avPhfmucHW0rCNdtMVSPACAdBM7dgHEP4h": "{\"id\":\"BorbKSuHhRTYa3n75B1GrAal6sOyy4avPhfmucHW0rCNdtMVSPACAdBM7dgHEP4h\",\"ttl\":1209600,\"created\":\"2018-02-28T02:30:32.910Z\",\"userId\":1}"
+    },
+    "Message": {},
+    "User": {},
+    "Luser": {
+      "1": "{\"username\":\"admin\",\"password\":\"$2a$10$x33xO.3lPhSKyS3qMpM4sOnjFgPEMwumfT6cW2UE.iR18Rgea1YX6\",\"email\":\"admin@e.com\",\"emailVerified\":true,\"id\":1}"
+    },
+    "Hiper": {},
+    "ACL": {},
+    "RoleMapping": {
+      "1": "{\"principalType\":\"USER\",\"principalId\":\"1\",\"roleId\":1,\"id\":1}"
+    },
+    "Role": {
+      "1": "{\"name\":\"admin\",\"created\":\"2018-01-15T11:00:01.466Z\",\"modified\":\"2018-01-15T11:00:01.466Z\",\"id\":1}"
+    },
+    "Account": {},
+    "MPIresults": {},
+    "emailtemp": {
+      "8": "{\"customerId\":\"1044055912@qq.com\",\"toEmail\":\"1044055912@qq.com\",\"fileName\":\"1044055912@qq.com\",\"fileContent\":\"1044055912@qq.com\",\"id\":8}",
+      "9": "{\"customerId\":\"1044055912@qq.com\",\"toEmail\":\"1044055912@qq.com\",\"fileName\":\"1044055912@qq.com\",\"fileContent\":\"1044055912@qq.com\",\"id\":9}"
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "name": "Apar",
+  "plural": "apars",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "wishes"
+  ],
+  "properties": {
+    "aparId": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "production": {
+      "type": "string",
+      "required": false
+    },
+    "hiper": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "pe": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "closeDate": {
+      "type": "date"
+    },
+    "dataLoss": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "funcLoss": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "outage": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "perf": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "pervasive": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "xSystem": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "mSysplex": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "numHit": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "numInstall": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "rating": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "abstract": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "triggers": {
+      "type": "string"
+    },
+    "effect": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "conclusion": {
+      "type": "string"
+    },
+    "localfix": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "ptfs": {
+      "type": "hasMany",
+      "model": "Ptf",
+      "foreignKey": "aparId",
+      "through": "Fix",
+      "keyThrough": "ptfId"
+    },
+    "pes": {
+      "type": "hasMany",
+      "model": "Ptf",
+      "foreignKey": "aparId",
+      "through": "Pe",
+      "keyThrough": "ptfId"
+    },
+    "wishes": {
+      "type": "hasMany",
+      "model": "Wish",
+      "foreignKey": "aparId"
+    },
+    "tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "foreignKey": "aparId",
+      "through": "AparTag",
+      "keyThrough": "tagId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

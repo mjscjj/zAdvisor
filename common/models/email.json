@@ -1,0 +1,30 @@
+{
+  "name": "Email",
+  "plural": "Emails",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "userId": {
+      "type": "string",
+      "required": true
+    },
+    "isVerify": {
+      "type": "string",
+      "required": true
+    },
+    "verifyEmail": {
+      "type": "string",
+      "required": true
+    },
+    "sendEmail": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

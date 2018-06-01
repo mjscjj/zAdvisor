@@ -1,0 +1,39 @@
+{
+  "name": "UserNotice",
+  "plural": "user-notices",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ownerId": {
+      "type": "string",
+      "required": true
+    },
+    "noticeId": {
+      "type": "string",
+      "required": true
+    },
+    "isRead": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "account": {
+      "type": "belongsTo",
+      "model": "Account",
+      "foreignKey": "ownerId"
+    },
+    "notice": {
+      "type": "belongsTo",
+      "model": "Notice",
+      "foreignKey": "noticeId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,54 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "db23": {
+    "port": "50000",
+    "database": "simpledb",
+    "password": "IBM44ibm",
+    "name": "db23",
+    "hostname": "9.111.213.249"
+  },
+  "db2_simple": {
+    "port": "50000",
+    "database": "simpledb",
+    "password": "IBM44ibm",
+    "name": "db2_simple",
+    "hostname": "9.111.213.249"
+  },
+  "db2_blue": {
+    "port": 50001,
+    "database": "bludb",
+    "username": "bluadmin",
+    "password": "IBM44ibm",
+    "name": "db2_blue",
+    "hostname": "9.111.213.249",
+    "connector": "db2"
+  },
+  "push": {
+    "name": "push",
+    "connector": "loopback-component-push",
+    "installation": "Install",
+    "notification": "Notify",
+    "application": "App"
+  },
+  "dashdb_t": {
+    "port": 50000,
+    "database": "BLUDB",
+    "username": "bluadmin",
+    "password": "OWMwYjY0MThjZmZh",
+    "name": "dashdb_t",
+    "hostname": "dashdb-txn-small-yp-dal09-44.services.dal.bluemix.net",
+    "connector": "db2"
+  },
+  "mydashdb": {
+    "port": 50000,
+    "database": "BLUDB",
+    "username": "bluadmin",
+    "password": "MmEyYTJhOTk3ZmZk",
+    "name": "mydashdb",
+    "hostname": "dashdb-txn-small-yp-dal09-37.services.dal.bluemix.net",
+    "connector": "db2"
+  }
+}

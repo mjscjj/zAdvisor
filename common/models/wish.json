@@ -1,0 +1,38 @@
+{
+  "name": "Wish",
+  "plural": "wishes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ownerId": {
+      "type": "string",
+      "required": true
+    },
+    "aparId": {
+      "type": "string",
+      "required": true
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "account": {
+      "type": "belongsTo",
+      "model": "Account",
+      "foreignKey": "ownerId"
+    },
+    "apar": {
+      "type": "belongsTo",
+      "model": "Apar",
+      "foreignKey": "aparId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,4 @@
+实现主进程负责相应HTTP请求,子进程处理业务逻辑
+方案一;cluster childprocess 的fork方法
+方案二:新建另外的服务器
+方案三:socket长连接通信

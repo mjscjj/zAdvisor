@@ -1,0 +1,33 @@
+{
+  "name": "Fix",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "aparId": {
+      "type": "string",
+      "required": true
+    },
+    "ptfId": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "apar": {
+      "type": "belongsTo",
+      "model": "Apar",
+      "foreignKey": "aparId"
+    },
+    "ptf": {
+      "type": "belongsTo",
+      "model": "Ptf",
+      "foreignKey": "ptfId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

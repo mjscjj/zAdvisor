@@ -1,0 +1,24 @@
+<body>
+<h3>请选择下载log文件：</h3>
+<p>（包含配置文件备份）</p>
+<% if(files.length>0) {%>
+<ul>
+  <% files.forEach(function(file){ %>
+  <li>
+    <a href="/file/<%- file %>?zadmin=123" target="_blank"><%- file %></a>
+  </li>
+  <%})%>
+</ul>
+<%} else {%>
+<p>没有可下载文件…</p>
+<%}%>
+<li>
+  <a href="/config?zadmin=123" target="_blank"><h4>点击下载配置文件</h4></a>
+</li>
+<form method="POST" action="/configload?zadmin=123" enctype="multipart/form-data">
+  <p>上传配置文件（文件名必须为 zConfig.js）</p>
+  <input type="file" name="file" /><br>
+  <input type="submit" name="file" />
+</form>
+
+</body>

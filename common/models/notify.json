@@ -1,0 +1,10 @@
+{
+  "name": "Notify",
+  "plural": "notifies",
+  "base": "Notification",
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

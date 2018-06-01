@@ -1,0 +1,50 @@
+{
+  "name": "Notice",
+  "plural": "notices",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "apar"
+  ],
+  "properties": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "abstract": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number",
+      "default": "0"
+    },
+    "aparId": {
+      "type": "string",
+      "required": false
+    },
+    "created": {
+      "type": "date",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "apar": {
+      "type": "belongsTo",
+      "model": "Apar",
+      "foreignKey": "aparId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

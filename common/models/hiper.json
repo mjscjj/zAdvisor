@@ -1,0 +1,27 @@
+{
+  "name": "Hiper",
+  "plural": "Hipers",
+  "base": "Model",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "owner": {
+      "type": "string"
+    },
+    "meplid": {
+      "type": "string"
+    },
+    "release": {
+      "type": "string"
+    },
+    "contexts": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

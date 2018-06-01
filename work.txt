@@ -1,0 +1,13 @@
+﻿MEI ZHEN CAO:
+上午10:06:41: 1:Customer input the PMR number in the App.
+ 2:The backend service will first try to verify that this PMR is valid or not.                                                    3: then the backend service need to verify that this PMR was opened by this customer.                           4: if all above condition is true, then try to fetch the mepl file from the FTP server under the PMR number.                                    5: list all mepl file under this PMR.
+
+上午10:06:52: ftp server + bluemix databaxse
+
+上午10:08:35: FTPsite = testcase.software.ibm.com
+Directory = /fromibm/im
+File Name = AK67568.HDB9910
+Mode = binary
+
+上午10:08:52: toibm/im
+12

@@ -1,0 +1,28 @@
+{
+  "name": "Ptf",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ptfId": {
+      "type": "string",
+      "id": true,
+      "required": true,
+      "index": true
+    },
+    "release": {
+      "type": "string",
+      "required": true
+    },
+    "subRelease": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

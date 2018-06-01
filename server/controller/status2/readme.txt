@@ -1,0 +1,4 @@
+优化建议
+1,去掉meplitems_a表中空ptfid记录
+2,优化relations_a表和apars_a表中关联查询
+3,拆分relations表中记录

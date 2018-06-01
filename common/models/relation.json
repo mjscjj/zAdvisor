@@ -1,0 +1,56 @@
+{
+  "name": "Relation",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "csect": {
+      "type": "string",
+      "required": true
+    },
+    "aparId": {
+      "type": "string",
+      "required": true
+    },
+    "prevApar": {
+      "type": "string"
+    },
+    "ptfId": {
+      "type": "string",
+      "required": true
+    },
+    "type": {
+      "type": "number",
+      "required": true
+    },
+    "rank": {
+      "type": "number",
+      "required": true
+    },
+    "release": {
+      "type": "string",
+      "required": true
+    },
+    "subRelease": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "apar": {
+      "type": "belongsTo",
+      "model": "Apar",
+      "foreignKey": "aparId"
+    },
+    "ptf": {
+      "type": "belongsTo",
+      "model": "Ptf",
+      "foreignKey": "ptfId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

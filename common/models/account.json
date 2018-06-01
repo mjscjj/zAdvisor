@@ -1,0 +1,107 @@
+{
+  "name": "Account",
+  "plural": "accounts",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "username": {
+      "type": "string",
+      "required": false
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "role": {
+      "type": "string",
+      "required": true
+    },
+    "accessToken": {
+      "type": "string",
+      "required": false
+    },
+    "refreshToken": {
+      "type": "string",
+      "required": false
+    },
+    "lastUpdated": {
+      "type": "date",
+      "required": false
+    },
+    "ttl": {
+      "type": "number",
+      "required": false
+    },
+    "isVerify": {
+      "type": "string",
+      "required": false
+    },
+    "customerId": {
+      "type": "string",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "notices": {
+      "type": "hasMany",
+      "model": "Notice",
+      "foreignKey": "ownerId",
+      "through": "UserNotice",
+      "keyThrough": "noticeId"
+    },
+    "wishes": {
+      "type": "hasMany",
+      "model": "Wish",
+      "foreignKey": "ownerId"
+    },
+    "tags": {
+      "type": "hasMany",
+      "model": "Tag",
+      "foreignKey": "ownerId",
+      "through": "UserTag",
+      "keyThrough": "tagId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "register"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "authenticate"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "logoff"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "getTags"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW",
+      "property": "updateTags"
+    }
+  ],
+  "methods": {}
+}

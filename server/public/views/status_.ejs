@@ -1,0 +1,29 @@
+<%- include('components/header') %>
+
+<div class="row clearfix">
+  <div class="col-md-10 column">
+    <%  if (message!=undefined){
+    %>
+    <p><%= message %><p/>
+    <%
+    }  %>
+    <div class="panel-group" id="panel-780460">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-780460" href="#panel-element-822122">SHOW MEPL</a>
+        </div>
+        <div id="panel-element-822122" class="panel-collapse collapse">
+
+          <%  if (mepl!==undefined){  for(var i in mepl){
+          %>  <div class="panel-body">  <a href="/resultfrommepl?meplid=<%=mepl[i].MEPLID%>&release=<%=mepl[i].RELEASE%>" >  <%= mepl[i].MEPLID%>  <%= mepl[i].USERID%>  <%= mepl[i].RELEASE%>  <%= mepl[i].DATE%></a> </div>
+          <%   }}
+          %>
+
+
+        </div>
+      </div>
+  </div>
+  <div class="col-md-2 column">
+  </div>
+</div>
+<%- include('components/footer') %>

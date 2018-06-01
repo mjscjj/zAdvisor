@@ -1,0 +1,32 @@
+{
+    "customBaseDir": "./logs",
+    "appenders": [{
+        "type": "console",
+        "category": "console"
+    }, {
+        "category": "logInfo",
+        "type": "dateFile",
+        "filename": "./logs/info",
+        "alwaysIncludePattern": true,
+        "pattern": "-yyyy-MM.log"
+    }, {
+        "category": "logError",
+        "type": "dateFile",
+        "filename": "./logs/error",
+        "alwaysIncludePattern": true,
+        "pattern": "-yyyy-MM.log"
+    }, {
+        "category": "logAccess",
+        "type": "dateFile",
+        "filename": "./logs/access",
+        "alwaysIncludePattern": true,
+        "pattern": "-yyyy-MM.log"
+    }],
+    "replaceConsole": true,
+    "levels": {
+        "console": "ALL",
+        "logInfo": "INFO",
+        "logError": "WARN",
+        "logAccess": "INFO"
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "AparTag",
+  "plural": "aparTags",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "aparId": {
+      "type": "string"
+    },
+    "tagId": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "apar": {
+      "type": "belongsTo",
+      "model": "Apar",
+      "foreignKey": "aparId"
+    },
+    "tag": {
+      "type": "belongsTo",
+      "model": "Tag",
+      "foreignKey": "tagId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

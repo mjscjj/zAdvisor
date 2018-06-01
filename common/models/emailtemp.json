@@ -1,0 +1,32 @@
+{
+  "name": "emailtemp",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "customerId": {
+      "type": "string"
+    },
+    "toEmail": {
+      "type": "string",
+      "required": true
+    },
+    "fileName": {
+      "type": "string",
+      "required": false
+    },
+    "fileContent": {
+      "type": "string",
+      "required": false
+    },
+    "codes": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

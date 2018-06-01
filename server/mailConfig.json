@@ -1,0 +1,12 @@
+{
+  "mailFeature": {
+    "host": "ap.relay.ibm.com",
+    "port": 25,
+    "secure": false,
+    "secureConnection": false,
+    "startTLS": true,
+    "logger": false,
+    "debug": false,
+    "from": "luoxinyu <luoxinyu@cn.ibm.com>"
+  }
+}

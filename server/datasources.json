@@ -1,0 +1,41 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory",
+    "file": "./data.json"
+  },
+  "push": {
+    "name": "push",
+    "connector": "loopback-component-push",
+    "installation": "Install",
+    "notification": "Notify",
+    "application": "App"
+  },
+  "mydashdb": {
+    "port": 50000,
+    "database": "BLUDB",
+    "username": "bluadmin",
+    "password": "MmEyYTJhOTk3ZmZk",
+    "name": "mydashdb",
+    "hostname": "dashdb-txn-small-yp-dal09-37.services.dal.bluemix.net",
+    "connector": "db2"
+  },
+  "dashdbt": {
+    "port": 50000,
+    "database": "BLUDB",
+    "username": "bluadmin",
+    "password": "OWMwYjY0MThjZmZh",
+    "name": "dashdbt",
+    "hostname": "dashdb-txn-small-yp-dal09-44.services.dal.bluemix.net",
+    "connector": "db2"
+  },
+  "db2_blue": {
+    "port": 50001,
+    "database": "bludb",
+    "username": "bluadmin",
+    "password": "IBM44ibm",
+    "name": "db2_blue",
+    "hostname": "9.111.213.249",
+    "connector": "db2"
+  }
+}

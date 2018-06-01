@@ -1,0 +1,41 @@
+{
+  "name": "Tag",
+  "plural": "tags",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "hidden": [
+    "users"
+  ],
+  "properties": {
+    "production": {
+      "type": "string",
+      "required": true
+    },
+    "tagName": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "apars": {
+      "type": "hasMany",
+      "model": "Apar",
+      "foreignKey": "tagId",
+      "through": "AparTag",
+      "keyThrough": "aparId"
+    },
+    "users": {
+      "type": "hasMany",
+      "model": "Account",
+      "foreignKey": "tagId",
+      "through": "UserTag",
+      "keyThrough": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

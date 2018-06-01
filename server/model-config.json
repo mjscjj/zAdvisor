@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Hiper": {
+    "dataSource": "db",
+    "public": true
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Account": {
+    "dataSource": "mydashdb",
+    "public": true
+  },
+  "Wish": {
+    "dataSource": "mydashdb",
+    "public": true
+  },
+  "Notice": {
+    "dataSource": "mydashdb",
+    "public": true
+  },
+  "UserNotice": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "Relation": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "Apar": {
+    "dataSource": "mydashdb",
+    "public": true
+  },
+  "Ptf": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "Pe": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "Mepl": {
+    "dataSource": "mydashdb",
+    "public": true
+  },
+  "MeplItem": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "Fix": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "Comment": {
+    "dataSource": "mydashdb",
+    "public": true
+  },
+  "App": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "Install": {
+    "dataSource": "mydashdb",
+    "public": true
+  },
+  "Notify": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "push": {
+    "dataSource": "push",
+    "public": true
+  },
+  "Tag": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "AparTag": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "UserTag": {
+    "dataSource": "mydashdb",
+    "public": false
+  },
+  "Search": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MPIresults": {
+    "dataSource": "mydashdb",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "db",
+    "public": true
+  },
+  "DeleteComment": {
+    "dataSource": "db",
+    "public": true
+  },
+  "InsertComment": {
+    "dataSource": "db",
+    "public": true
+  },
+  "ShowComments": {
+    "dataSource": "db",
+    "public": true
+  },
+  "UpdateComment": {
+    "dataSource": "db",
+    "public": true
+  },
+  "PerformanceAnalysis": {
+    "dataSource": "db",
+    "public": true
+  },
+  "SendingEmail": {
+    "dataSource": "db",
+    "public": true
+  },
+  "emailtemp": {
+    "dataSource": "dashdbt",
+    "public": false
+  }
+}

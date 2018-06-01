@@ -1,0 +1,44 @@
+{
+  "name": "Mepl",
+  "plural": "mepls",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "ownerId": {
+      "type": "string",
+      "required": false
+    },
+    "release": {
+      "type": "string",
+      "required": false
+    },
+    "subRelease": {
+      "type": "number",
+      "required": false
+    },
+    "created": {
+      "type": "date",
+      "required": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "meplItems": {
+      "type": "hasMany",
+      "model": "MeplItem",
+      "foreignKey": "meplId"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

@@ -1,0 +1,11 @@
+如果发生错误(node:23556) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: [IBM][CL
+      I Driver][DB2/LINUXX8664] SQL0668N  Operation not allowed for reason code "7" on table "BLUADMIN.Account".  SQLSTATE=57016
+
+      [2018-01-26 13:49:58.927] [ERROR] console - (node:23556) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promis
+      e rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+      ^C
+      C:\Users\JieJieChu\Desktop\working\develop\1.24>node .
+执行---
+CALL SYSPROC.ADMIN_CMD('reorg table XXXXXXX')
+
+附上链接：http://blog.csdn.net/fujunsfzh/article/details/54313081
